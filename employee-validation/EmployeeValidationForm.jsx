@@ -4,8 +4,10 @@ const validators = {
   name: (value) => /^[a-zA-Z ]{4,}$/.test(value),
   email: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
   employeeId: (value) => /^\d{6}$/.test(value),
+
   // Valid only if date is before 2025-01-01
   // Test uses "2024-04-12" (valid) and "2025-04-12" (invalid)
+
   joiningDate: (value) => {
     if (!value) return false;
     return value < "2025-01-01";
@@ -13,6 +15,7 @@ const validators = {
 };
 
 function EmployeeValidationForm() {
+  
   const [values, setValues] = useState({
     name: "",
     email: "",

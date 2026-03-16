@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./App.css";
 import "h8k-components";
 import EmployeeValidationForm from "./components/EmployeeValidationForm";
