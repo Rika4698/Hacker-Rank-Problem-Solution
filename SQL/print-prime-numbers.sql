@@ -22,3 +22,36 @@ Primes AS (
 
 SELECT GROUP_CONCAT(n ORDER BY n SEPARATOR '&')
 FROM Primes;
+
+-- GROUP_CONCAT(n ORDER BY n SEPARATOR '&')
+
+-- Here:
+
+-- GROUP_CONCAT() → combines multiple rows into one string
+-- ORDER BY n → keeps numbers ascending
+-- SEPARATOR '&' → puts & between numbers
+
+-- For example:
+
+-- GROUP_CONCAT(n SEPARATOR '&')
+
+-- produces:
+
+-- 2&3&5&7
+
+-- Final structure to remember
+-- WITH RECURSIVE
+--        ↓
+-- Generate numbers
+
+-- NOT EXISTS
+--        ↓
+-- Remove numbers having divisors
+
+-- GROUP_CONCAT()
+--        ↓
+-- Put all primes into one line
+
+-- SEPARATOR '&'
+--        ↓
+-- 2&3&5&7
