@@ -3,3 +3,13 @@ FROM CITY
 JOIN COUNTRY
 ON CITY.COUNTRYCODE = COUNTRY.CODE
 GROUP BY COUNTRY.Continent;
+
+-- FLOOR() removes the decimal part by rounding down.
+
+-- Example:
+
+-- AVG = 123456.78
+
+-- FLOOR(123456.78)
+--         ↓
+--      123456
