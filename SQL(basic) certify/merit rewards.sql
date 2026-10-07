@@ -24,3 +24,14 @@ WHERE ei.division = 'HR'
             --       bonus >= 5000
             --            ↓
             --   employee_ID + name
+
+
+
+-- 1. JOIN
+--    → connect the two tables
+
+-- 2. WHERE
+--    → division = 'HR'
+
+-- 3. AND
+--    → bonus >= 5000
